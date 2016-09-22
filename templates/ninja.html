@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ hi }}</title>
+  </head>
+  <body>
+<table border=1>
+<tr>
+<th>occupations</th><th>percent</th>
+</tr>
+    {%- for item in occupations %}
+   <tr>
+<td>{{item}}</td>
+ <td>{{dic[item]}}</td>
+</tr>
+    {%- endfor %}
+</table>
+<br><br>
+{{random}}
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ hi }}</title>
+  </head>
+  <body>
+    {%- for item in fool %}
+{{item}}
+    <br>
+{%- endfor %}
+    <br>
+  </body>
+</html>
