@@ -19,7 +19,7 @@ def test_template():
             occupation[0]=occupation[0][1:-1]
         d[occupation[0]]=float(occupation[1])
     keys=d.keys()
-    return render_template("ninja.html", hi = "Occupation Randomizer", occupations = keys, dic = d, random = pickRandom(d))
+    return render_template("ninja.html", title = "Occupation Randomizer", head = "Table of occupations and percent of pop. with said job", occupations = keys, dic = d, random = pickRandom(d))
 
 def pickRandom(d):
     listOfJobs=d.keys()
